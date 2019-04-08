@@ -7,7 +7,7 @@ namespace Clock
         static double Clock(int hour, int min)
         {
             double result;
-            result = (hour * 30 + min * 1.2) - (min * 6);
+            result = (hour * 30 + min * 0.5) - (min * 6);
             if (result < 0)
                 result *= -1;
             return result;
